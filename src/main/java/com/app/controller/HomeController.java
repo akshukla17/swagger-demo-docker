@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
 	static Map<String, String> map = new HashMap<>();
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String defaultCall() {
 		return "Welcome to spring boot project along with circle CI integration";
